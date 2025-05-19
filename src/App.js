@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import MonitoringDiagram from './components/MonitoringDiagram';
+import MonitoringWater from './components/MonitoringWater';
+import MonitoringWet from './components/MonitoringWet';
+import MonitoringDry from './components/MonitoringDry';
 import Header from './components/Header';
 import './App.css';
 
 function App() {
     const [userAuth, setUserAuth] = useState(null);
     const [newLogin, setNewLogin] = useState(false);
+
+    const [monitoringType, setMonitoringType] = useState('water');
 
     useEffect(() => {
         fetch("/api/userInfo", {
@@ -26,12 +30,22 @@ function App() {
             });
     }, []);
 
+    let monitoringComponent = <MonitoringWater />;
+    if (monitoringType === "wet") monitoringComponent = <MonitoringWet />;
+    else if (monitoringType === "dry") monitoringComponent = <MonitoringDry />;
+    else if (monitoringType === "water") monitoringComponent = <MonitoringWater />;
 
     return (
-            <>
-                <Header userAuth={userAuth} newLogin={newLogin} /> {/* 헤더 렌더링 */}
-                <MonitoringDiagram />
-            </>
+            <div className="app-container">
+                <Header userAuth={userAuth}
+                        newLogin={newLogin}
+                        monitoringType={monitoringType}
+                        onChangeMonitoringType={setMonitoringType}
+                />
+                <div className="monitoring-wrapper">
+                    {monitoringComponent}
+                </div>
+            </div>
     );
 }
 

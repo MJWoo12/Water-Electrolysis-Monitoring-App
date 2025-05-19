@@ -1,7 +1,8 @@
 .header {
-    height: 50px;
-    background-color: #00aaff; /* 기존 톤에 맞게 */
+    height: 65px;
+    /*background-color: #00aaff; !* 기존 톤에 맞게 *!*/
     display: flex;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;

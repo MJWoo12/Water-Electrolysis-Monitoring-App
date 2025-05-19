@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import Swal from "sweetalert2";
 import "./Header.css";
 
-function Header({ userAuth, newLogin }) {
+function Header({ userAuth, newLogin, monitoringType, onChangeMonitoringType }) {
     useEffect(() => {
         document.title = "수전해 모니터링 시스템";
-        const faviconUrl = "/favicon.ico";
+        const faviconUrl = "/favicon.png";
         let link = document.querySelector("link[rel~='icon']");
         if (!link) {
             link = document.createElement("link");
@@ -14,9 +14,9 @@ function Header({ userAuth, newLogin }) {
         }
         link.href = faviconUrl;
 
-    if (userAuth === "01" && newLogin && localStorage.getItem("seenToast") !== "true") {
+    if (userAuth === "01" && newLogin && sessionStorage.getItem("seenToast") !== "true") {
             showToast("새로운 권한 요청이 있습니다.");
-            localStorage.setItem("seenToast", "true");
+            sessionStorage.setItem("seenToast", "true");
         }
     }, [userAuth, newLogin]);
 
@@ -40,7 +40,7 @@ function Header({ userAuth, newLogin }) {
 
     function handleLogout(e) {
         e.preventDefault();
-        localStorage.removeItem("seenToast");
+        sessionStorage.removeItem("seenToast");
         window.location.href = "/logout";
     }
 
@@ -56,9 +56,25 @@ function Header({ userAuth, newLogin }) {
                     <img src="/icon/logoImage.png" alt="Logo" className="logo-img" />
                 </a>
             </div>
+            <div className="header-switch-btns">
+                <button
+                    onClick={() => onChangeMonitoringType("water")}
+                    className={monitoringType === "water" ? "active" : ""}
+                >WATER SECTION</button>
+                <button
+                    onClick={() => onChangeMonitoringType("dry")}
+                    className={monitoringType === "dry" ? "active" : ""}
+                >DRY SECTION</button>
+                <button
+                    onClick={() => onChangeMonitoringType("wet")}
+                    className={monitoringType === "wet" ? "active" : ""}
+                >WET SECTION</button>
+            </div>
+
             <div className="header-icons">
                 {userAuth === "01" && (
                     <div className="bell-wrapper">
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             href="#"
                             className="bell-icon"
@@ -74,6 +90,7 @@ function Header({ userAuth, newLogin }) {
                     <img src="/icon/user.png" alt="User Icon" className="user-icon" />
                     <div className="dropdown">
                         <a href="/mypage">마이페이지</a>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a href="#" id="logoutBtn" onClick={handleLogout}>
                             로그아웃
                         </a>
