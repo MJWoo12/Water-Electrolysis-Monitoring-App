@@ -68,7 +68,7 @@ export default function MonitoringWater() {
                     <rect x="422" y="543" width="82" height="34" fill="#D9D9D9"/>
                     <text
                         x={422 + 82 / 2}
-                        y={543 + 34 / 2 + 7}
+                        y={539 + 34 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -172,7 +172,7 @@ export default function MonitoringWater() {
                     <rect x="628" y="137" width="97" height="34" fill="#D9D9D9"/>
                     <text
                         x={628 + 97 / 2}
-                        y={137 + 34 / 2 + 7}
+                        y={133 + 34 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -234,7 +234,7 @@ export default function MonitoringWater() {
                     <rect x="1122" y="112" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1122 + 89 / 2}
-                        y={112 + 30 / 2 + 7}
+                        y={108 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -249,7 +249,7 @@ export default function MonitoringWater() {
                     <rect x="1023" y="494" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1023 + 89 / 2}
-                        y={494 + 30 / 2 + 7}
+                        y={490 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -264,7 +264,7 @@ export default function MonitoringWater() {
                     <rect x="1236" y="359" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1236 + 89 / 2}
-                        y={359 + 30 / 2 + 7}
+                        y={355 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -280,7 +280,7 @@ export default function MonitoringWater() {
                     <rect x="1470" y="263" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1470 + 89 / 2}
-                        y={263 + 30 / 2 + 7}
+                        y={259 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -295,7 +295,7 @@ export default function MonitoringWater() {
                     <rect x="1690" y="386" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1690 + 89 / 2}
-                        y={386 + 30 / 2 + 7}
+                        y={382 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -310,7 +310,7 @@ export default function MonitoringWater() {
                     <rect x="1788" y="449" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1788 + 89 / 2}
-                        y={449 + 30 / 2 + 7}
+                        y={445 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -325,7 +325,7 @@ export default function MonitoringWater() {
                     <rect x="1788" y="504" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1788 + 89 / 2}
-                        y={504 + 30 / 2 + 7}
+                        y={500 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -340,7 +340,7 @@ export default function MonitoringWater() {
                     <rect x="1236" y="415" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1236 + 89 / 2}
-                        y={415 + 30 / 2 + 7}
+                        y={411 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -355,7 +355,7 @@ export default function MonitoringWater() {
                     <rect x="1236" y="479" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1236 + 89 / 2}
-                        y={479 + 30 / 2 + 7}
+                        y={475 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -370,7 +370,7 @@ export default function MonitoringWater() {
                     <rect x="1058" y="672" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1058 + 89 / 2}
-                        y={672 + 30 / 2 + 7}
+                        y={668 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -385,7 +385,7 @@ export default function MonitoringWater() {
                     <rect x="31" y="58" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={31 + 89 / 2}
-                        y={58 + 30 / 2 + 7}
+                        y={54 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -401,7 +401,7 @@ export default function MonitoringWater() {
                     <rect x="1224" y="672" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1224 + 89 / 2}
-                        y={672 + 30 / 2 + 7}
+                        y={668 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -417,7 +417,7 @@ export default function MonitoringWater() {
                     <rect x="1356" y="673" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1356 + 89 / 2}
-                        y={673 + 30 / 2 + 7}
+                        y={669 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"
@@ -434,7 +434,7 @@ export default function MonitoringWater() {
                     <rect x="1686" y="139" width="89" height="30" fill="#D9D9D9"/>
                     <text
                         x={1686 + 89 / 2}
-                        y={139 + 30 / 2 + 7}
+                        y={135 + 30 / 2 + 7}
                         textAnchor="middle"
                         alignmentBaseline="middle"
                         fontSize="18"

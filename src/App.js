@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MonitoringWater from './components/MonitoringWater';
 import MonitoringWet from './components/MonitoringWet';
 import MonitoringDry from './components/MonitoringDry';
+import MonitoringDashboard from './components/MonitoringDashboard';
 import Header from './components/Header';
 import './App.css';
 
@@ -34,6 +35,7 @@ function App() {
     if (monitoringType === "wet") monitoringComponent = <MonitoringWet />;
     else if (monitoringType === "dry") monitoringComponent = <MonitoringDry />;
     else if (monitoringType === "water") monitoringComponent = <MonitoringWater />;
+    else if (monitoringType === "dashboard") monitoringComponent = <MonitoringDashboard />;
 
     return (
             <div className="app-container">

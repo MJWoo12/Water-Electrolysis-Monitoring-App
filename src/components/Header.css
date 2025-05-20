@@ -15,6 +15,19 @@
     gap: 20px;
 }
 
+.header-switch-btns {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* 원하는 만큼 조절: 예시로 18px */
+    background-color: white;
+}
+
+
+:root {
+    --btn-bg: #007bff; /* 파란색 배경 예시 */
+}
+
+
 .bell-icon {
     font-size: 20px;
     color: white;
@@ -56,15 +69,42 @@
     display: inline-block;
 }
 
-.notification-dot {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 8px;
-    height: 8px;
-    background-color: red;
-    border-radius: 50%;
+.btn-switch {
+    background-color: white; /* 원하는 색상으로 수정 */
+    color: #222;
+    border: none;
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
 }
+
+.btn-switch::before, .btn-switch::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--btn-bg);
+    opacity: 0;
+    transform: scaleX(0);
+    transition: 0.4s ease-in-out;
+}
+.btn-switch::before {
+    top: 0;
+}
+.btn-switch::after {
+    bottom: 0;
+}
+.btn-switch:hover {
+    letter-spacing: 5px;
+    color: var(--btn-bg);
+    background: transparent;
+}
+
+/*.btn-switch:hover::before, .btn-switch:hover::after {*/
+/*    opacity: 1;*/
+/*    transform: scaleX(1.2);*/
+/*}*/
 
 /* 드롭다운 메뉴 */
 .dropdown {
